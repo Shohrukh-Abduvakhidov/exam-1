@@ -554,7 +554,185 @@ video {
   display: none;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
+.mx-\[5px\] {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-\[52px\] {
+  height: 52px;
+}
+
+.w-\[148px\] {
+  width: 148px;
+}
+
+.w-\[201px\] {
+  width: 201px;
+}
+
+.w-\[207px\] {
+  width: 207px;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
+}
+
+.gap-\[5px\] {
+  gap: 5px;
+}
+
+.rounded-\[4px\] {
+  border-radius: 4px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-\[\#FF3F3A\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 63 58 / var(--tw-border-opacity, 1));
+}
+
+.bg-\[\#FEDDD1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 221 209 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#FF3F3A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 63 58 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#FFDAD4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 218 212 / var(--tw-bg-opacity, 1));
+}
+
 .bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-\[25px\] {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-\[46px\] {
+  font-size: 46px;
+}
+
+.text-\[50px\] {
+  font-size: 50px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-\[\#1E212C\] {
+  --tw-text-opacity: 1;
+  color: rgb(30 33 44 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#424551\] {
+  --tw-text-opacity: 1;
+  color: rgb(66 69 81 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#FF3F3A\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 63 58 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#fff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:text-\[64px\] {
+    font-size: 64px;
+  }
 }
