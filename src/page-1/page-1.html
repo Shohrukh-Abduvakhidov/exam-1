@@ -13,6 +13,19 @@
       margin: auto;
       font-family: "Lato", sans-serif;
     }
+    #but-1:hover
+    {
+      background-color: transparent;
+      border: 2px solid #FF3F3A;
+      color: #FF3F3A;
+      transition: all 1s ease;
+    }
+    #but-2:hover
+    {
+      background-color: #FF3F3A;
+      color: #fff;
+      transition: all 1s ease;
+    }
   </style>
 </head>
 <body>
@@ -35,7 +48,7 @@
         </ul>
       </aside>
       <aside class="items-center gap-10 lg:flex">
-        <button class="w-[207px] h-[52px] bg-[#FF3F3A] text-[#fff] text-[16px] font-bold rounded-[4px]">Get consultation</button>
+        <button id="but-1" class="w-[207px] h-[52px] bg-[#FF3F3A] text-[#fff] text-[16px] font-bold rounded-[4px]">Get consultation</button>
         <button class="hidden lg:flex items-center gap-[5px]"><img src="../images/Profile.png" alt="">Log in / Register</button>
       </aside>
     </navbar>
@@ -46,8 +59,8 @@
         <h1 class="text-[50px] lg:text-[64px] text-[#1E212C] font-bold py-[25px]">Enjoy studying
           with Createx Online Courses</h1>
           <div class="flex items-center gap-10">
-            <button class="w-[148px] h-[52px] border-2 border-[#FF3F3A] text-[#FF3F3A] rounded-[4px] text-[16px]">About us</button> 
-            <button class="w-[201px] h-[52px] bg-[#FF3F3A] text-[#fff] text-[16px] font-bold rounded-[4px]">Explore courses</button>
+            <button id="but-2" class="w-[148px] h-[52px] border-2 border-[#FF3F3A] text-[#FF3F3A] rounded-[4px] text-[16px]">About us</button> 
+            <button id="but-1" class="w-[201px] h-[52px] bg-[#FF3F3A] text-[#fff] text-[16px] font-bold rounded-[4px]">Explore courses</button>
           </div>
       </aside>
       <img src="../images/illustration.png" alt="" class="m-0">
@@ -81,9 +94,94 @@
       
     </section>
   </header>
+  
+  <main>
+    <section class="w-[90%] flex flex-col lg:flex-row lg:flex mt-[150px] gap-20">
+      <img src="../images/img-1.png" alt="" class="m-0 lg:w-[610px] lg:h-[550px]">
+      <aside class="lg:w-[390px] m-0">
+        <p class="text-[16px] text-[#1E212C] font-bold">Who we are</p>
+        <h2 class="text-[46px] text-[#1E212C] font-bold">Why Createx?</h2>
+        <p class="flex items-start gap-[10px] text-[#424551] text-[16px] py-[10px] pt-[50px]"><img src="../images/check.png" alt="" class="m-0">A fermentum in morbi pretium aliquam adipiscing donec tempus.</p>
+        <p class="flex items-start gap-[10px] text-[#424551] text-[16px] py-[10px]"><img src="../images/check.png" alt="" class="m-0">Vulputate placerat amet pulvinar lorem nisl.</p>
+        <p class="flex items-start gap-[10px] text-[#424551] text-[16px] py-[10px]"><img src="../images/check.png" alt="" class="m-0">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</p>
+        <p class="flex items-start gap-[10px] text-[#424551] text-[16px] py-[10px]"><img src="../images/check.png" alt="" class="m-0">Etiam duis lobortis in fames ultrices commodo nibh.</p>
+        <p class="flex items-start gap-[10px] text-[#424551] text-[16px] py-[10px]"><img src="../images/check.png" alt="" class="m-0">Tincidunt sagittis neque sem ac eget.</p>
+        <p class="flex items-start gap-[10px] text-[#424551] text-[16px] py-[10px] pb-[30px]"><img src="../images/check.png" alt="" class="m-0">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</p>
+        <button id="but-1" class="w-[181px] h-[44px] bg-[#FF3F3A] text-[#fff] text-[16px] font-bold rounded-[4px]">More about us</button>
+      </aside>
+    </section>
 
+    <section class="w-[90%] mt-[100px]">
+      <p class="text-center lg:text-start">Ready to learn?</p>
+      <aside class="flex flex-col items-center justify-between lg:flex-row lg:flex">
+        <h2 class="text-[#1E212C] text-center lg:text-start text-[46px] font-bold">Featured Courses</h2>
+        <button id="but-2" class="w-[203px] h-[52px] border-2 border-[#FF3F3A] text-[#FF3F3A] rounded-[4px] text-[16px]">View all courses</button> 
+      </aside>
+    </section>
 
-
+    <section class="w-[90%]  grid gap-[50px] lg:grid-cols-2 grid-rows-3 mt-[100px] lg:gap-[30px]">
+      
+      <aside class="lg:w-[570px] h-[214px] shadow-lg flex gap-[20px] items-center">
+        <img src="../images/human-1.png" alt="" class="w-[170px] lg:w-[214px] m-0">
+        <div class="w-[322px] m-0 ">
+          <p class="bg-[#03CEA4] w-[80px] h-[23px] m-0 rounded-[4px] text-[#fff]">Marketing</p>
+          <h3 class="text-[#1E212C] text-[20px] m-0 font-bold py-[15px]">The Ultimate Google Ads Training Course</h3>
+          <p class="text-[18px] text-[#787A80]"> <span class="text-[#FF4242] font-bold">$100</span> | by Jerome Bell </p>
+        </div>
+      </aside>
+      
+      <aside class="lg:w-[570px] h-[214px] shadow-2xl flex gap-[20px] items-center">
+        <img src="../images/human-2.png" alt="" class="w-[170px] lg:w-[214px] m-0">
+        <div class="w-[322px] m-0 ">
+          <p class="bg-[#5A87FC] w-[95px] h-[23px] m-0 rounded-[4px] text-[#fff]">Management</p>
+          <h3 class="text-[#1E212C] text-[20px] m-0 font-bold py-[15px]">Prduct Management Fundamentals</h3>
+          <p class="text-[18px] text-[#787A80]"> <span class="text-[#FF4242] font-bold">$480</span> | by Marvin McKinney</p>
+        </div>
+      </aside>
+      
+      <aside class="lg:w-[570px] h-[214px] shadow-lg flex gap-[20px] items-center">
+        <img src="../images/human-3.png" alt="" class="w-[170px] lg:w-[214px] m-0">
+        <div class="w-[322px] m-0 ">
+          <p class="bg-[#F89828] w-[120px] h-[23px] m-0 rounded-[4px] text-[#fff]">HR & Recruting</p>
+          <h3 class="text-[#1E212C] text-[20px] m-0 font-bold py-[15px]">HR  Management and Analytics</h3>
+          <p class="text-[18px] text-[#787A80]"> <span class="text-[#FF4242] font-bold">$200</span> | by Leslie Alexander Li</p>
+        </div>
+      </aside>
+      
+      <aside class="lg:w-[570px] h-[214px] shadow-lg flex gap-[20px] items-center">
+        <img src="../images/human-4.png" alt="" class="w-[170px] lg:w-[214px] m-0">
+        <div class="w-[322px] m-0 ">
+          <p class="bg-[#03CEA4] w-[80px] h-[23px] m-0 rounded-[4px] text-[#fff]">Marketing</p>
+          <h3 class="text-[#1E212C] text-[20px] m-0 font-bold py-[15px]">Brand Management & PR Communications</h3>
+          <p class="text-[18px] text-[#787A80]"> <span class="text-[#FF4242] font-bold">$530</span> | by Kristin Watson </p>
+        </div>
+      </aside>
+      
+      <aside class="lg:w-[570px] h-[214px] shadow-lg flex gap-[20px] items-center">
+        <img src="../images/human-5.png" alt="" class="w-[170px] lg:w-[214px] m-0">
+        <div class="w-[322px] m-0 ">
+          <p class="bg-[#5A87FC] w-[95px] h-[23px] m-0 rounded-[4px] text-[#fff]">Management</p>
+          <h3 class="text-[#1E212C] text-[20px] m-0 font-bold py-[15px]">Business Development Management</h3>
+          <p class="text-[18px] text-[#787A80]"> <span class="text-[#FF4242] font-bold">$400</span> | by Dianne Russell</p>
+        </div>
+      </aside>
+      
+      <aside class="lg:w-[570px] h-[214px] shadow-lg flex gap-[20px] items-center">
+        <img src="../images/human-6.png" alt="" class="w-[170px] lg:w-[214px] m-0 ">
+        <div class="w-[322px] m-0 ">
+          <p class="bg-[#F52F6E] w-[80px] h-[23px] m-0 rounded-[4px] text-[#fff]">Design</p>
+          <h3 class="text-[#1E212C] text-[20px] m-0 font-bold py-[15px]">Graphic Design Basic </h3>
+          <p class="text-[18px] text-[#787A80]"> <span class="text-[#FF4242] font-bold">$500</span> | by Guy Hawkins</p>
+        </div>
+      </aside>
+    </section>
+    
+    
+    
+    
+    
+  </main>
+  
   <script>
     function navigateToLink(selectElement) {
       const url = selectElement.value;
