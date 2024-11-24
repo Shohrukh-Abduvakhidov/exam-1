@@ -842,6 +842,10 @@ video {
   width: 600px;
 }
 
+.w-\[97\%\] {
+  width: 97%;
+}
+
 .max-w-\[400px\] {
   max-width: 400px;
 }
@@ -1570,6 +1574,10 @@ video {
 
   .lg\:w-\[755px\] {
     width: 755px;
+  }
+
+  .lg\:w-\[765px\] {
+    width: 765px;
   }
 
   .lg\:grid-cols-2 {
