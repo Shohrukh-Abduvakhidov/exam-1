@@ -3,11 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <link href="../output.css" rel="stylesheet">
   <style>
-    
+     @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Flow+Circular&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&family=Yellowtail&display=swap');
+    *
+    {
+      margin: 0;
+      max-width: 1440px;
+      font-family: "Lato", sans-serif;
+      margin: auto;
+    }
+    body
+    {
+      margin: auto;
+    }
+    #but-1:hover
+    {
+      background-color: transparent;
+      border: 2px solid #FF3F3A;
+      color: #FF3F3A;
+      transition: all 1s ease;
+    }
+    #but-2:hover
+    {
+      background-color: #FF3F3A;
+      color: #fff;
+      transition: all 1s ease;
+    }
+    #back-1
+    {
+      background-image: url(../images/back-1.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      
+    }
   </style>
 </head>
 <body>
+  <navbar class="w-[90%] text-[#424551] flex items-center justify-between py-5 gap-10 m-auto">
+    <aside class="flex items-center gap-20">
+      <img src="../images/logo.png" alt="" class="m-0">
+      <ul class="text-[16px] font-semibold hidden lg:flex items-center gap-10">
+        <li><a href="" class="">About Us</a></li>
+        <li><a href="" class="">Courses</a></li>
+        <li><a href="" class="text-[#FF3F3A]">Events</a></li>
+        <li><a href="" class="">Blog</a></li>
+        <select name="" id="" onchange="navigateToLink(this)" class="cursor-pointer text-[#424551] outline-none">
+          <form action="">
+            <option value="" selected>Contacts</option>
+            <option value="../page-3/page-3.html">Courses</option>
+            <option value="../">Events</option>
+          </form>
+        </select>
+      </ul>
+    </aside>
+    <aside class="items-center gap-10 lg:flex">
+      <button id="but-1" class="w-[207px] h-[52px] bg-[#FF3F3A] text-[#fff] text-[16px] font-bold rounded-[4px]">Get consultation</button>
+      <button class="hidden lg:flex items-center gap-[5px]"><img src="../images/Profile.png" alt="">Log in / Register</button>
+    </aside>
+  </navbar>
+
+  <header class="text-center m-auto mt-[100px] lg:w-[810px]">
+    <p class="text-[#1E212C] text-[16px] font-bold">Our events</p>
+    <h2 class="text-[#1E212C] text-[30px] lg:text-[46px] font-bold">Lectures, workshops & master-classes</h2>
+  </header>
+  
+  <main>
+    <section class="w-[97%] mt-[50px] flex flex-col lg:flex-row items-center gap-5">
+      <aside class="lg:w-[295px] m-0 lg:h-[44px] text-[16px] text-[#424551]"> 
+        <form action="" class="">
+          <label for="themes" class="px-[10px] font-bold">Event category</label>
+          <select name="" id="themes" class="lg:w-[160px] lg:h-[44px] border-[2px]">
+            <option value=""  class="">all themes</option>
+          </select>
+        </form>
+      </aside>
+      
+      <aside class="lg:w-[240px] m-0 lg:h-[44px] text-[16px] text-[#424551]"> 
+        <form action="" class="">
+          <label for="themes-2" class="px-[10px] font-bold">Sort by</label>
+          <select name="" id="themes-2" class="lg:w-[160px] lg:h-[44px] border-[2px]">
+            <option value=""  class="">newest</option>
+          </select>
+        </form>
+      </aside>
+      
+      <aside class="lg:w-[240px] lg:h-[44px] text-[#424551] m-0">
+        <form action=" ">
+          <label for="number" class="text-[16px] font-bold">Show</label>
+          <input type="number" name="" id="number" class="w-[72px] h-[44px] m-0 border-[2px] px-[10px]" placeholder="9">
+          <label for="number">events per page</label>
+        </form>
+      </aside>
+      
+      <aside class="lg:w-[315px] lg:h-[44px] border-2 border-[#D7DADD] px-[10px] flex justify-between items-center m-0">
+        <input type="search" placeholder="Search course..." class="text-[#9A9CA5] w-[270px]  outline-none lg:h-[40px]">
+        <img src="../images/search.png" alt="" class="cursor-pointer">
+      </aside>
+      <img src="../images/view-2.png" alt="" class="m-0">
+    </section>  
+
+    <section class="w-[95%] grid md:grid-cols-2 lg:grid-cols-3 grid-rows-3 mt-[100px] gap-10">
+      
+      <aside class="lg:w-[370px] h-[323px] shadow-xl p-[15px]">
+        <h2 class="text-[#FF3F3A] text-[30px] font-bold">05 Aug</h2>
+        <p class="text-[16px] text-[#787A80]">11:00 – 14:00</p>
+        <p class="text-[18px] text-[#1E212C] font-bold py-[15px]">Formation of the organizational structure of the company in the face of uncertainty.</p>
+        <p class="text-[#787A80] text-[16px]">Onine master-class</p>
+        <button id="but-2" class="w-[320px] h-[44px] border-2 border-[#FF3F3A] text-[#FF3F3A] font-bold text-[16px] mt-[50px] m-auto">View more</button>
+      </aside>
+      
+      <aside class="lg:w-[370px] h-[323px] shadow-xl p-[15px]">
+        <h2 class="text-[#FF3F3A] text-[30px] font-bold">24 Jul</h2>
+        <p class="text-[16px] text-[#787A80]">11:00 – 12:30</p>
+        <p class="text-[18px] text-[#1E212C] font-bold py-[15px]">Building a customer service department. Best Practices.</p>
+        <p class="text-[#787A80] text-[16px]">Onine lecture</p>
+        <button id="but-2" class="w-[320px] h-[44px] border-2 border-[#FF3F3A] text-[#FF3F3A] font-bold text-[16px] mt-[50px] m-auto">View more</button>
+      </aside>
+      
+      <aside class="lg:w-[370px] h-[323px] shadow-xl p-[15px]">
+        <h2 class="text-[#FF3F3A] text-[30px] font-bold">16 Jul</h2>
+        <p class="text-[16px] text-[#787A80]">10:00 – 13:00</p>
+        <p class="text-[18px] text-[#1E212C] font-bold py-[15px]">How to apply methods of speculative design in practice. Worldbuilding.</p>
+        <p class="text-[#787A80] text-[16px]">Onine  workshop</p>
+        <button id="but-2" class="w-[320px] h-[44px] border-2 border-[#FF3F3A] text-[#FF3F3A] font-bold text-[16px] mt-[50px] m-auto">View more</button>
+      </aside>
+      
+      <aside class="lg:w-[370px] h-[323px] shadow-xl p-[15px]">
+        <h2 class="text-[#FF3F3A] text-[30px] font-bold">10 Jul</h2>
+        <p class="text-[16px] text-[#787A80]">9:00 – 14:00</p>
+        <p class="text-[18px] text-[#1E212C] font-bold py-[15px]">Find and evaluate: search and assessment tools for candidates.</p>
+        <p class="text-[#787A80] text-[16px]">Onine  workshop</p>
+        <button id="but-2" class="w-[320px] h-[44px] border-2 border-[#FF3F3A] text-[#FF3F3A] font-bold text-[16px] mt-[50px] m-auto">View more</button>
+      </aside>
+      
+      <aside class="lg:w-[370px] h-[323px] shadow-xl p-[15px]">
+        <h2 class="text-[#FF3F3A] text-[30px] font-bold">27 Jun</h2>
+        <p class="text-[16px] text-[#787A80]">15:00 – 19:00</p>
+        <p class="text-[18px] text-[#1E212C] font-bold py-[15px]">Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI</p>
+        <p class="text-[#787A80] text-[16px]">Onine master-class</p>
+        <button id="but-2" class="w-[320px] h-[44px] border-2 border-[#FF3F3A] text-[#FF3F3A] font-bold text-[16px] mt-[50px] m-auto">View more</button>
+      </aside>
+      <aside class="lg:w-[370px] h-[323px] shadow-xl p-[15px]">
+        <h2 class="text-[#FF3F3A] text-[30px] font-bold">15 Jun</h2>
+        <p class="text-[16px] text-[#787A80]">11:00 – 12:00</p>
+        <p class="text-[18px] text-[#1E212C] font-bold py-[15px]">Marketing or growth hacking: main differences and what business needs</p>
+        <p class="text-[#787A80] text-[16px]">Onine  lecture</p>
+        <button id="but-1" class="w-[320px] h-[44px] border-2 bg-[#FF3F3A] text-[#FFF] font-bold text-[16px] mt-[50px] m-auto">View more</button>
+      </aside>
+
+      <aside class="lg:w-[370px] h-[323px] shadow-xl p-[15px]">
+        <h2 class="text-[#FF3F3A] text-[30px] font-bold">02 Jul</h2>
+        <p class="text-[16px] text-[#787A80]">11:00 – 13:00</p>
+        <p class="text-[18px] text-[#1E212C] font-bold py-[15px]">How to brief a client and present your design to approve it from the first show.</p>
+        <p class="text-[#787A80] text-[16px]">Onine  lecture</p>
+        <button id="but-2" class="w-[320px] h-[44px] border-2 border-[#FF3F3A] text-[#FF3F3A] font-bold text-[16px] mt-[50px] m-auto">View more</button>
+      </aside>
+      
+      <aside class="lg:w-[370px] h-[323px] shadow-xl p-[15px]">
+        <h2 class="text-[#FF3F3A] text-[30px] font-bold">29 May</h2>
+        <p class="text-[16px] text-[#787A80]">11:00 – 12:00</p>
+        <p class="text-[18px] text-[#1E212C] font-bold py-[15px]">Who is a project manager and do I want to be PM?</p>
+        <p class="text-[#787A80] text-[16px]">Onine lecture</p>
+        <button id="but-2" class="w-[320px] h-[44px] border-2 border-[#FF3F3A] text-[#FF3F3A] font-bold text-[16px] mt-[50px] m-auto">View more</button>
+      </aside>
+      
+      <aside class="lg:w-[370px] h-[323px] shadow-xl p-[15px]">
+        <h2 class="text-[#FF3F3A] text-[30px] font-bold">18 May</h2>
+        <p class="text-[16px] text-[#787A80]">10:00 – 12:00</p>
+        <p class="text-[18px] text-[#1E212C] font-bold py-[15px]">The company's business page as an additional tool to support the announcement of vacancies.</p>
+        <p class="text-[#787A80] text-[16px]">Onine lecture</p>
+        <button id="but-2" class="w-[320px] h-[44px] border-2 border-[#FF3F3A] text-[#FF3F3A] font-bold text-[16px] mt-[25px] m-auto">View more</button>
+      </aside>
+    </section>
+    <div class="mt-[50px] mb-[100px]"><img src="../images/pagination.png" alt=""> </div>
+
 </body>
 </html>
