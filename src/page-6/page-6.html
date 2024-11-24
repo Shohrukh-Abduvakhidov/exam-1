@@ -3,11 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <link href="../output.css" rel="stylesheet">
   <style>
-    
+     @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Flow+Circular&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&family=Yellowtail&display=swap');
+    *
+    {
+      margin: 0;
+      max-width: 1440px;
+      font-family: "Lato", sans-serif;
+      margin: auto;
+    }
+    body
+    {
+      margin: auto;
+    }
+    #but-1:hover
+    {
+      background-color: transparent;
+      border: 2px solid #FF3F3A;
+      color: #FF3F3A;
+      transition: all 1s ease;
+    }
+    #but-2:hover
+    {
+      background-color: #FF3F3A;
+      color: #fff;
+      transition: all 1s ease;
+    }
+    #back-1
+    {
+      background-image: url(../images/back-1.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      
+    }
   </style>
 </head>
 <body>
+  <header class="w-full bg-[#FEDCD1]">
+    <navbar class="w-[90%] text-[#424551] flex items-center justify-between py-5 gap-10 m-auto">
+      <aside class="flex items-center gap-20">
+        <img src="../images/logo.png" alt="" class="m-0">
+        <ul class="text-[16px] font-semibold hidden lg:flex items-center gap-10">
+          <li><a href="" class="">About Us</a></li>
+          <li><a href="" class="text-[#FF3F3A]">Courses</a></li>
+          <li><a href="" class="">Events</a></li>
+          <li><a href="" class="">Blog</a></li>
+          <select name="" id="" onchange="navigateToLink(this)" class="cursor-pointer text-[#424551] outline-none bg-[#FEDCD1]">
+            <form action="">
+              <option value="" selected>Contacts</option>
+              <option value="../page-3/page-3.html">Courses</option>
+              <option value="../">Events</option>
+            </form>
+          </select>
+        </ul>
+      </aside>
+      <aside class="items-center gap-10 lg:flex">
+        <button id="but-1" class="w-[207px] h-[52px] bg-[#FF3F3A] text-[#fff] text-[16px] font-bold rounded-[4px]">Get consultation</button>
+        <button class="hidden lg:flex items-center gap-[5px]"><img src="../images/Profile.png" alt="">Log in / Register</button>
+      </aside>
+    </navbar>
+
+    <section class="text-center lg:w-[850px] mt-[100px] pb-[100px]">
+      <p class="text-[#FF3F3A] text-[16px] font-bold">course</p>
+      <h1 class="text-[#1E212C] text-[30px] lg:text-[45px] font-bold">Formation of the organizational structure of the company in the face of uncertainty</h1>
+    </section>
+  </header>
+
+  <main>
+    <section class="w-[90%] mt-[100px] flex flex-col lg:flex-row items-center justify-between gap-20">
+      <aside class="lg:w-[600px] m-0">
+        <h2 class="text-[#1E212C] text-[46px] font-bold">We will talk about:</h2>
+        <p class="font-bold text-[#FF3F3A] text-[20px] py-[10px] pt-[50px]">-  Theme 1. <span class="text-[#1E212C]">Aliquet lectus urna viverra in odio.</span> </p>
+        <p class="text-[#424551] text-[16px]">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+        <p class="font-bold text-[#FF3F3A] text-[20px] py-[10px]">+  Theme 2. <span class="text-[#1E212C]">Orci commodo, viverra orci mollis ut euismod.</span> </p>
+        <p class="font-bold text-[#FF3F3A] text-[20px] py-[10px]">+  Theme 3. <span class="text-[#1E212C]">Sagittis vitae facilisi rutrum amet mauris quisque.</span> </p>
+        <p class="font-bold text-[#FF3F3A] text-[20px] py-[10px]">+  Theme 4. <span class="text-[#1E212C]">In id dolor quis nunc, urna hendrerit pharetra.</span> </p>
+      </aside>
+      <aside class="lg:w-[495px] shadow-xl">
+        <aside class="lg:w-[495px]  shadow-2xl p-[40px]">
+          <p class="text-[#1E212C] font-bold">TIME</p>
+          <p class="text-[24px] text-[#FF3F3A] font-bold py-[10px]">August 5, 11:00 – 14:00</p>
+          <p class="text-[16px] text-[#787A80] ">Metus turpis sit lorem lacus, in elit tellus lacus.</p>
+          
+          <p class="text-[#1E212C] font-bold pt-[30px] py-[10px]">PRICE</p>
+          <p class="text-[24px] text-[#FF3F3A] font-bold py-[10px]">Free</p>
+          <p class="text-[16px] text-[#787A80] py-[20px] ">Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.</p>
+          
+          <a href="" class="text-[#FF3F3A] text-[20px] font-bold underline my-[20px]">Event on Facebook</a>
+         
+          <button id="but-1" class="text-[#fff] text-[16px] font-bold lg:w-[431px] h-[44px] mt-[60px] bg-[#FF3F3A]">Join the course</button>
+        </aside>
+      </section>
+  
+      </aside>
+    </section>
+
+    <section class="w-[90%] flex flex-col lg:flex-row items-center justify-between gap-20 mt-[100px]">
+      <img src="../images/speaker-image.png" alt="" class="m-0 lg:w-[440px]">
+      <aside class="lg:w-[600px]">
+        <p class="text-[#1E212C] text-[16px] font-bold">Speaker</p>
+        <h2 class="text-[#1E212C] text-[46px] font-bold">Kathryn Murphy</h2>
+        <p class="text-[#787A80] text-[20px] py-[15px] ">Analyst and Marketing specialist in IT company</p>
+        <p class="text-[#424551] text-[16px]">Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam. </p>
+        <img src="../images/logos-2.png" alt="" class="m-0 py-[20px]">
+        <img src="../images/socials-2.png" alt="" class="m-0 py-[10px]">
+        
+      </aside>
+    </section>
+
+    <section class="w-[90%] flex flex-col lg:flex-row items-center justify-between gap-20 mt-[100px]">
+      <aside class="m-0 lg:w-[495px]">
+        <p class="text-[#1E212C] text-[16px] font-bold">For whom?</p>
+        <h2 class="text-[#1E212C] text-[46px] font-bold">Who will benefit from the event:</h2>
+      </aside>
+      <aside class="m-0 lg:w-[600px]">
+        <p class="flex items-start gap-[10px] text-[#424551] text-[16px] py-[10px] font-bold"><img src="../images/check.png" alt="" class="m-0">Specialists with more than 1 year of active work experience</p>
+        <p class="flex items-start gap-[10px] text-[#424551] text-[16px] py-[10px] font-bold"><img src="../images/check.png" alt="" class="m-0">Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces</p>
+        <p class="flex items-start gap-[10px] text-[#424551] text-[16px] py-[10px] font-bold"><img src="../images/check.png" alt="" class="m-0">Professional designers who want to feel more confident in UX</p>
+      </aside>
+    </section>
+    
+    <section class="w-full lg:w-[90%] bg-[#FEDBD3] mt-[100px] flex flex-col lg:flex-row justify-around py-[50px]">
+      <img src="../images/illustration-5.png" alt="" class="m-0">
+      <aside class="lg:w-[600px] m-0">
+        <h2 class="text-[32px] text-[#1E212C] font-bold">Don’t want to miss the best events?
+          Subscribe to our newsletter!</h2>
+          <div class="lg:w-[600px] flex justify-between pb-[42px] m-auto pt-[30px]">
+            <form action="">
+              <input type="email" class="lg:w-[422px] h-[52px] text-[#9A9CA5] text-[16px] px-[5px] outline-none" placeholder="Your working email">
+              <button id="but-1" class="w-[154px] h-[52px] bg-[#FF3F3A] text-[#fff] text-[16px] font-bold rounded-[4px]">Subscribe</button>
+            </form>
+          </div>
+          <input type="checkbox" name="" id="check" class="">
+          <label for="check" class="text-[16px] text-[#424551]">I agree to receive communications from Createx Online School</label>
+      </aside>
+    </section>
+  </main>
+  
 </body>
 </html>
