@@ -992,6 +992,10 @@ video {
   gap: 7px;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
 .rounded-\[4px\] {
   border-radius: 4px;
 }
@@ -1790,6 +1794,10 @@ video {
 
   .lg\:gap-\[50px\] {
     gap: 50px;
+  }
+
+  .lg\:gap-\[10px\] {
+    gap: 10px;
   }
 
   .lg\:pb-0 {
