@@ -3,11 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <link href="../output.css" rel="stylesheet">
   <style>
-    
+     @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Flow+Circular&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&family=Yellowtail&display=swap');
+    *
+    {
+      margin: 0;
+      max-width: 1440px;
+      margin: auto;
+      font-family: "Lato", sans-serif;
+    }
+    #but-1:hover
+    {
+      background-color: transparent;
+      border: 2px solid #FF3F3A;
+      color: #FF3F3A;
+      transition: all 1s ease;
+    }
+    #but-2:hover
+    {
+      background-color: #FF3F3A;
+      color: #fff;
+      transition: all 1s ease;
+    }
+    #back-1
+    {
+      background-image: url(../images/back-1.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      
+    }
   </style>
 </head>
 <body>
+  <navbar class="w-[90%]  text-[#424551] flex items-center justify-between py-5 gap-10">
+    <aside class="flex items-center gap-20">
+      <img src="../images/logo.png" alt="" class="m-0">
+      <ul class="text-[16px] font-semibold hidden lg:flex items-center gap-10">
+        <li><a href="" class="">About Us</a></li>
+        <li><a href="" class="">Courses</a></li>
+        <li><a href="" class="">Events</a></li>
+        <li><a href="" class="">Blog</a></li>
+        <select name="" id="" onchange="navigateToLink(this)" class="cursor-pointer text-[#424551] outline-none">
+          <form action="">
+            <option value="" selected>Contacts</option>
+            <option value="../page-3/page-3.html">Courses</option>
+            <option value="../">Events</option>
+          </form>
+        </select>
+      </ul>
+    </aside>
+    <aside class="items-center gap-10 lg:flex">
+      <button id="but-1" class="w-[207px] h-[52px] bg-[#FF3F3A] text-[#fff] text-[16px] font-bold rounded-[4px]">Get consultation</button>
+      <button class="hidden lg:flex items-center gap-[5px]"><img src="../images/Profile.png" alt="">Log in / Register</button>
+    </aside>
+  </navbar>
+  <header class="">
+    <section class="w-[95%] mt-[100px] flex flex-col lg:flex-row justify-between items-start gap-10">
+      <aside class="m-0 lg:w-[750px]">
+        <img src="../images/metas.png" alt="" class="m-0">
+        <h2 class="text-[46px] text-[#1E212C] font-bold">HR statistics: job search,  interviews, hiring and recruiting</h2>
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-20 mt-[10px]">
+          <img src="../images/metan.png" alt="" class="m-0">
+          <img src="../images/sharing copy.png" alt="" class="m-0">
+        </div>
+        <img src="../images/keyword-2.jpg" alt="" class="m-0 py-[20px]">
+        <p class="text-[20px] text-[#1E212C] font-bold">Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac euismod. </p>
+        <p class="text-[16px] text-[#424551] py-[10px] pt-[20px]">At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.</p>
+        <p class="text-[16px] text-[#424551] py-[10px]">Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc, non.</p>
+        <div class="flex gap-[20px] items-start">
+          <img src="../images/braces-4.png" alt="" class="m-0">
+          <p class="text-[20px] text-[#1E212C] font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus  facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in tot euismod vulputate etiam eros. Vel accumsan at elit neque, ipsum.</p>
+          
+        </div>
+        <p class="text-[16px] text-[#424551] py-[10px]">Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus blandit in neque amet non fringilla blandit:</p>
+        <p class="text-[16px] text-[#424551] py-[10px] flex items-center gap-[10px]"><img src="../images/check copy.png" alt="" class="m-0">A fermentum in morbi pretium aliquam adipiscing donec tempus.</p>
+        <p class="text-[16px] text-[#424551] py-[10px] flex items-center gap-[10px]"><img src="../images/check copy.png" alt="" class="m-0">Vulputate placerat amet pulvinar lorem nisl.</p>
+        <p class="text-[16px] text-[#424551] py-[10px] flex items-center gap-[10px]"><img src="../images/check copy.png" alt="" class="m-0">Vulputate placerat amet pulvinar lorem nisl.</p>
+        <p class="text-[16px] text-[#424551] py-[10px] flex items-center gap-[10px]"><img src="../images/check copy.png" alt="" class="m-0">Etiam duis lobortis in fames ultrices commodo nibh.</p>
+
+        <p class="text-[16px] text-[#424551] py-[10px]">Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.</p>
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-20 mt-[30px]">
+          <img src="../images/tags.png" alt="" class="m-0">
+          <img src="../images/sharing copy.png" alt="" class="m-0">
+        </div>
+      </aside>
+      <aside class="m-0 lg:w-[342px]">
+        <aside class="lg:w-[315px] lg:h-[44px] border-2 border-[#D7DADD] px-[10px] flex justify-between items-center">
+          <input type="search" placeholder="Search course..." class="text-[#9A9CA5] w-[270px]  outline-none lg:h-[40px]">
+          <img src="../images/search.png" alt="" class="cursor-pointero">
+        </aside>
+        <p class="text-[18px] text-[#1E212C] font-bold py-[10px]">Author</p>
+        <div class="flex gap-10">
+          <img src="../images/girl.png" alt="" class="m-0">
+          <div class="m-0">
+            <p class="text-[20px] text-[#424551] font-bold">Kristin Watson</p>
+            <p class="text-[16px] text-[#787A80] ">Curator of Marketing Course</p>
+            <img src="../images/socials-4.png" alt="" class="m-0">
+          </div>
+        </div>
+        <p class="text-[18px] text-[#1E212C] font-bold py-[30px]">Trending Articles</p>
+        <div class="flex gap-10 m-0">
+          <img src="../images/box-1.jpg" alt="">
+          <div class="m-0">
+            <img src="../images/date-1.png" alt="" class="m-0">
+            <p class="text-[20px] text-[#424551] font-bold">What is traffic arbitrage and does it really make money?</p>
+          </div>
+          </div>
+          
+        <div class="flex gap-10 m-0 py-[40px]">
+          <img src="../images/box-2.jpg" alt="">
+          <div class="m-0">
+            <img src="../images/date-2.png" alt="" class="m-0">
+            <p class="text-[20px] text-[#FF3F3A] font-bold">Startup: how to build a team that will live longer than a year</p>
+          </div>
+          </div>
+          
+        <div class="flex gap-10 m-0">
+          <img src="../images/box-3.jpg" alt="">
+          <div class="m-0">
+            <img src="../images/date-3.png" alt="" class="m-0">
+            <p class="text-[20px] text-[#424551] font-bold">What to do if you want to get feedback on the product</p>
+          </div>
+        </div>
+        <p class="text-[20px] text-[#1E212C] font-bold pt-[30px]">Tags</p>
+        <div class="flex flex-wrap gap-[5px] mt-[25px] cursor-pointer">
+          <p class="text-[#787A80] text-[16px] p-[10px] rounded-[4px] border-2">#marketing</p>
+          <p class="text-[#787A80] text-[16px] p-[10px] rounded-[4px] border-2">#recruiting</p>
+          <p class="text-[#fff] text-[16px] p-[10px] bg-[#FF3F3A] rounded-[4px] border-2">#coding</p>
+          <p class="text-[#787A80] text-[16px] p-[10px] rounded-[4px] border-2">#learning</p>
+          <p class="text-[#787A80] text-[16px] p-[10px] rounded-[4px] border-2">#HR</p>
+          <p class="text-[#787A80] text-[16px] p-[10px] rounded-[4px] border-2">#self-development</p>
+        </div>
+      </aside>
+    </section>
+  </header>
+
 </body>
 </html>
