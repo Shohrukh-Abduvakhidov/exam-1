@@ -18,3 +18,4 @@
 # baroi watchi tailwind 1-ta file hastai da duruni folderi "src" nomsh watch tailwind ai hamuja kopiya knen ba da terminal mone
 # button - hoda hamashda soz ahamiyat tied hamash hover doran 
 # hamai page-ho max - width doran 
+# ai shumo bali hub intizoram
