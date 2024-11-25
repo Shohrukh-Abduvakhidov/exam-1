@@ -725,6 +725,10 @@ video {
   width: 80px;
 }
 
+.w-\[85\%\] {
+  width: 85%;
+}
+
 .w-\[90\%\] {
   width: 90%;
 }
@@ -743,10 +747,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[85\%\] {
-  width: 85%;
 }
 
 .cursor-pointer {
@@ -797,16 +797,16 @@ video {
   gap: 20px;
 }
 
+.gap-\[30px\] {
+  gap: 30px;
+}
+
 .gap-\[50px\] {
   gap: 50px;
 }
 
 .gap-\[5px\] {
   gap: 5px;
-}
-
-.gap-\[30px\] {
-  gap: 30px;
 }
 
 .gap-\[7px\] {
@@ -847,6 +847,11 @@ video {
 .bg-\[\#1E212C\] {
   --tw-bg-opacity: 1;
   background-color: rgb(30 33 44 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#292C37\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 44 55 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#393C46\] {
@@ -909,15 +914,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#292C37\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(41 44 55 / var(--tw-bg-opacity, 1));
-}
-
 .px-\[10px\] {
   padding-left: 10px;
   padding-right: 10px;
@@ -953,6 +949,11 @@ video {
   padding-bottom: 20px;
 }
 
+.py-\[22px\] {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
 .py-\[25px\] {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -976,16 +977,6 @@ video {
 .py-\[8px\] {
   padding-top: 8px;
   padding-bottom: 8px;
-}
-
-.py-\[30px\] {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.py-\[22px\] {
-  padding-top: 22px;
-  padding-bottom: 22px;
 }
 
 .pb-\[100px\] {
@@ -1030,10 +1021,6 @@ video {
 
 .pt-\[80px\] {
   padding-top: 80px;
-}
-
-.pb-\[\] {
-  padding-bottom: ;
 }
 
 .text-center {
@@ -1104,6 +1091,11 @@ video {
   color: rgb(154 156 165 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#A9ABAF\] {
+  --tw-text-opacity: 1;
+  color: rgb(169 171 175 / var(--tw-text-opacity, 1));
+}
+
 .text-\[\#FF3F3A\] {
   --tw-text-opacity: 1;
   color: rgb(255 63 58 / var(--tw-text-opacity, 1));
@@ -1117,28 +1109,6 @@ video {
 .text-\[\#fff\] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#444650\] {
-  --tw-text-opacity: 1;
-  color: rgb(68 70 80 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#\] {
-  color: #;
-}
-
-.text-\[\#A9ABAF\] {
-  --tw-text-opacity: 1;
-  color: rgb(169 171 175 / var(--tw-text-opacity, 1));
-}
-
-.text-\[16\[x\]\] {
-  color: 16[x];
-}
-
-.text-\[16\] {
-  color: 16;
 }
 
 .shadow-2xl {
