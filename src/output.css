@@ -865,6 +865,10 @@ video {
   width: 100%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -895,6 +899,10 @@ video {
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -971,6 +979,10 @@ video {
 
 .rounded-\[5px\] {
   border-radius: 5px;
+}
+
+.rounded-\[8px\] {
+  border-radius: 8px;
 }
 
 .border {
